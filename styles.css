@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9e99744;
+    font-family: "Merriweather", serif;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    padding: 5px;
+    position: relative;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+aside {
+    width: 320px;
+    height: 100%;
+    background-color: #ffc3744f;
+    float: left;
+}
+
+#navbar {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border-right: 3px solid #124076;
+    overflow: scroll;
+}
+
+#navbar>header>h1,
+#main-doc header>h2 {
+    font-size: 35px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+#navbar .nav-link {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    font-size: 20px;
+    color: #124076;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-color: #f9e9977e;
+    border-top: 1px solid #124076;
+    border-bottom: 1px solid #124076;
+}
+
+#main-doc {
+    width: calc(100% - 320px);
+    height: 100%;
+    padding: 30px 20px 10px 30px;
+    float: left;
+    overflow: scroll;
+}
+
+ol,
+ul {
+    padding-left: 30px;
+    margin-bottom: 5px;
+
+}
+
+p {
+    margin: 10px 0px;
+    text-align: justify;
+}
+
+code {
+    display: block;
+    background-color: #7f9f8048;
+    color: #124076;
+    padding: 10px;
+    margin: 5px;
+}
+
+code ul,
+code ol {
+    list-style-type: none;
+}
+
+
+figure {
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+}
+
+figure>img {
+    margin: 5px auto;
+    display: block;
+    width: 50%;
+}
+
+figure>figcaption {
+    position: relative;
+    left: 25%;
+}
+
+@media (max-width: 768px) {
+    #container {
+        padding: 7px 12px;
+
+    }
+
+    aside {
+        float: none;
+        display: block;
+        width: 100%;
+        height: 25%;
+    }
+
+    #navbar {
+        padding-bottom: 0px;
+        border: none;
+        border-bottom: 3px solid #124076;
+    }
+
+
+    #main-doc {
+        float: none;
+        display: block;
+        width: 100%;
+        padding: 0;
+
+    }
+}
